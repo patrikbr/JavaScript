@@ -1,0 +1,13 @@
+let num = 0;
+
+function addOneHandle(){
+    num++;
+    document.getElementById('display').innerHTML = num;
+}
+function minOneHandle(){
+    num--;
+    document.getElementById('display').innerHTML = num;
+}
+
+document.getElementById('plus').addEventListener("click",addOneHandle);
+document.getElementById('minus').addEventListener("click",minOneHandle);
